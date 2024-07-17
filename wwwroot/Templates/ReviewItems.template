@@ -1,0 +1,8 @@
+﻿<h1>Wiki Reviewer</h1>
+<div class="para">The following are a list of edits which are in need of review.</div>
+
+<div class="titles">
+<div class="path">Path</div>
+<div class="filename">Filename</div>
+<div class="stamp">Stamp</div>
+</div>

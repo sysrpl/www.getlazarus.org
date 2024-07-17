@@ -1,0 +1,6 @@
+﻿<div>
+<div class="path">{Path}</div>
+<div class="filename"><a target="editor" href="{Path}?method=review&filename={Filename}">{Filename}</a></div>
+<div class="stamp">{Stamp}</div>
+<div class="delete"><a onclick="return deleteItem(this, '{Path}', '{Filename}')">delete</a></div>
+</div>

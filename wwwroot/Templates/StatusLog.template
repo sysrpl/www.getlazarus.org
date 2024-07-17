@@ -1,0 +1,7 @@
+<div class="log row">
+	<span>{Stamp}</span>
+	<span>{Url}</span>
+	<span>{Address}</span>
+	<span>{Platform}</span>
+	<span>{Referer}</span>
+</div>

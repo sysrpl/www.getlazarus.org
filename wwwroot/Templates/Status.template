@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link type="text/css" href="/styles/status.css" rel="stylesheet" media="all">
+	<title>Status Report</title>
+</head>
+<body>
+	<div id="title">Status Report</div>
+	<div id="time">{CurrentTime}</div>
+	<div class="status">WebCache contains {CacheCount} entries</div>
+	<div class="status">WebCache value size {CacheValueSize:N2}MB</div>
+	<div class="status">WebCache total size {CacheTotalSize:N2}MB</div>
+	<div class="cache header">
+		<span>Stamp</span>
+		<span>HandlerType</span>
+		<span>QueryString</span>
+		<span>Size</span>
+		<span>Agent</span>
+		<span>Address</span>
+		<span>Rewrites</span>
+		<span>Reuses</span>
+	</div>
+	<div class="cache rows">
+	{CacheRows}
+	</div>
+	<button onclick="window.location.href = '?method=reset'">Reset Cache</button>
+	<div class="status">WebLog information</div>
+	<div class="log header">
+		<span>Stamp</span>
+		<span>Url</span>
+		<span>Address</span>
+		<span>Platform</span>
+		<span>Referer</span>
+	</div>
+	<div class="log rows">
+	{LogRows}
+	</div>
+	<div class="status">WebLog distinct address count {LogAddressCount}</div>
+	<div class="logAddress header">
+		<span>Address</span>
+	</div>
+	<div class="logAddress rows">
+	{LogAddress}
+	</div>
+	<div class="status">WebLog referer count {LogRefererCount}</div>
+	<div class="logReferer header">
+		<span>Referer</span>
+		<span>Count</span>
+	</div>
+	<div class="logReferer rows">
+	{LogReferer}
+	</div>
+	<button onclick="window.location.href = '?'">Refresh Status</button>
+</body>
+</html>

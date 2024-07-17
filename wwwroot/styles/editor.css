@@ -1,0 +1,204 @@
+ul#editor {
+	color: #c66c04;
+	list-style-type: none;
+	padding-left: 10px;
+	margin-top: 70px;
+	margin-bottom: -10px;
+	line-height: 21px;
+	position: relative;
+	z-index: 2;
+}
+
+ul#editor>li {
+	display: inline-block;
+	text-indent: 0;
+	margin: 0;
+	padding-right: 10px;
+	padding-left: 5px;
+	border-right: 1px solid #c66c04;
+	opacity: 0.75;
+}
+
+ul#editor>li:last-child {
+	border-right: 1px solid transparent;
+}
+
+ul#editor>li#edit {
+	background: url(//cache.getlazarus.org/images/edit.gif) no-repeat;
+	padding-left: 25px;
+	border-right: 1px solid transparent;
+}
+
+ul#editor>li.hidden {
+	display: none;
+}
+
+ul#editor>li a {
+	font-weight: 500;
+	font-style: normal;
+}
+
+.confirm {
+	width: 500px;
+	line-height: 40px;
+	height: 40px;
+	margin: 16px;
+	margin-left: 9px;
+	padding-left: 45px;
+	border-radius: 10px;
+	background: url(//cache.getlazarus.org/images/confirm.png) 7px 3px no-repeat;
+	background-color: #fceddc;
+	border: 1px solid #D2D1B2;
+	position: relative;
+	z-index: 3;
+}
+
+.confirm .button {
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	width: 76px;
+	height: 26px;
+	line-height: 26px;
+	background: url(//cache.getlazarus.org/images/button.png) 0 0;
+	position: absolute;
+	top: 7px;
+}
+
+.confirm .button:hover {
+	background: url(//cache.getlazarus.org/images/button.png) -76px 0;
+}
+
+.confirm .one {
+	right: 94px;
+}
+
+.confirm .two {
+	right: 10px;
+}
+
+div.hidden {
+	display: none;
+}
+
+.confirm.hidden .button {
+	display: none;
+}
+
+#wikititle {
+	width: 500px;
+	font-family: monospace;
+	resize: none;
+}
+
+#wikieditor {
+	width: calc(100% - 10px);
+	height: 400px;
+	font-family: monospace;
+	resize: none;
+}
+
+#wrapToggle {
+	float: right;
+	margin-top: 20px;
+}
+
+#diff {
+	white-space: pre-wrap; 
+}
+
+#frame3d, #prior3d, #next3d {
+  display: inline-block;
+}
+
+#prior3d, #next3d {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border-radius: 30px;
+    font-size: 30px;
+    line-height: 60px;
+    background: #e07902;
+    top: -205px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#prior3d:hover, #next3d:hover {
+    background: #e9b477;
+    transition: background 0.2s;
+}    
+
+#prior3d {
+    text-indent: -6px;
+}
+
+#next3d {
+    text-indent: 3px;
+}
+
+#frame3d {
+  display: inline-block;
+  width: 800px;
+  height: 420px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#template {
+  display: inline-block;
+  border: 2px dotted #e26004;
+}
+
+#blurb {
+    background: #c0c0c024;
+    border: 1px solid #b8b8b8;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#toc {
+    float: left;
+    margin-top: -130px;
+    width: 190px;
+    background: #c0c0c024;
+    border: 1px solid #b8b8b8;
+    padding: 1em;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+#toc.mini {
+    margin-top: 0;
+}
+
+#toc.plain .tocno  {
+	display: none;
+}
+
+#toc > div {
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -0.6em;
+}
+
+#toc ul li a {
+  font-weight: 400;
+}
+
+#toc ul ul {
+  padding-left: 20px;
+}
+
+#opening {
+    display: block;
+    padding-left: 225px;
+}
+
+.block {
+  padding-left: 4em;
+}

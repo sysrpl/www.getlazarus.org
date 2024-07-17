@@ -1,0 +1,23 @@
+.path {
+	float: left;
+	clear: left;
+	width: 300px;
+}
+
+.filename {
+	float: left;
+	width: 250px;
+}
+
+.stamp {
+	float: left;
+	width: 270px;
+}
+
+.delete {
+	float: left;
+}
+
+.titles div {
+	font-weight: 700;
+}

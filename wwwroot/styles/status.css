@@ -1,0 +1,192 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+}
+
+body {
+	margin: 1em;
+}
+
+.status {
+	font-size: smaller;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.cache.header {
+	margin-top: 1em;
+}
+
+.cache span {
+	display: inline-block;
+	border: 1px solid silver;
+  	overflow: hidden;
+    white-space: nowrap;
+	font-size: smaller;
+	margin: 0;
+	padding-left: 2px;
+}
+
+.cache span:nth-child(1) {
+	width: 200px;
+}
+
+.cache span:nth-child(2) {
+	width: 240px;
+}
+
+.cache span:nth-child(3) {
+	width: 480px;
+}
+
+.cache span:nth-child(4) {
+	width: 80px;
+}
+
+.cache span:nth-child(5) {
+	width: 450px;
+}
+
+.cache span:nth-child(6) {
+	width: 130px;
+}
+
+.cache span:nth-child(7) {
+	width: 70px;
+}
+
+.cache span:nth-child(8) {
+	width: 70px;
+}
+
+.cache.rows {
+	width: 1820px;
+	max-height: 500px;
+	overflow-y: scroll;
+	background: rgb(238, 238, 238);
+} 
+
+.cache.row  span {
+	border: 1px solid transparent;
+} 
+
+.log.header {
+	margin-top: 1em;
+}
+
+.log span {
+	display: inline-block;
+	border: 1px solid silver;
+  	overflow: hidden;
+    white-space: nowrap;
+	font-size: smaller;
+	margin: 0;
+	padding-left: 2px;
+}
+
+.log span:nth-child(1) {
+	width: 200px;
+}
+
+.log span:nth-child(2) {
+	width: 600px;
+}
+
+.log span:nth-child(3) {
+	width: 150px;
+}
+
+.log span:nth-child(4) {
+	width: 200px;
+}
+
+.log span:nth-child(5) {
+	width: 575px;
+}
+
+.log span:nth-child(6) {
+	width: 130px;
+}
+
+.log span:nth-child(7) {
+	width: 70px;
+}
+
+.log span:nth-child(8) {
+	width: 70px;
+}
+
+.log.rows {
+	width: 1800px;
+	max-height: 500px;
+	overflow-y: scroll;
+	background: rgb(238, 238, 238);
+} 
+
+.log.row  span {
+	border: 1px solid transparent;
+} 
+
+.logAddress.header {
+	margin-top: 1em;
+}
+
+.logAddress.rows {
+	width: 175px;
+	max-height: 200px;
+	overflow-y: scroll;
+	background: rgb(238, 238, 238);
+} 
+
+.logAddress span {
+	display: inline-block;
+	border: 1px solid silver;
+  	overflow: hidden;
+    white-space: nowrap;
+	font-size: smaller;
+	margin: 0;
+	padding-left: 2px;
+}
+
+.logAddress span:nth-child(1) {
+	width: 150px;
+}
+
+.logAddress.row span {
+	border: 1px solid transparent;
+} 
+
+.logReferer.header {
+	margin-top: 1em;
+}
+
+.logReferer.rows {
+	width: 1020px;
+	max-height: 200px;
+	overflow-y: scroll;
+	background: rgb(238, 238, 238);
+} 
+
+.logReferer span {
+	display: inline-block;
+	border: 1px solid silver;
+  	overflow: hidden;
+    white-space: nowrap;
+	font-size: smaller;
+	margin: 0;
+	padding-left: 2px;
+}
+
+.logReferer span:nth-child(1) {
+	width: 900px;
+}
+
+.logReferer span:nth-child(2) {
+	width: 75px;
+}
+
+.logReferer.row span {
+	border: 1px solid transparent;
+}

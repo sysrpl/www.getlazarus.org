@@ -1,0 +1,4 @@
+<div class="logReferer row">
+	<span>{Referer}</span>
+	<span>{Count}</span>
+</div>

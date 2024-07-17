@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>{Title}</title>
+	<link href="//cache.getlazarus.org/favicon.png" rel="shortcut icon">
+	<!-- link href="//cache.getlazarus.org/images/favicon.gif" rel="icon" -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" media="all">
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700" rel="stylesheet" type="text/css" media="all">
+	<link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css" media="all">
+	<link href="//cache.getlazarus.org/syntax/styles/shCore.css" rel="stylesheet" type="text/css" media="all">
+	<link href="//cache.getlazarus.org/syntax/styles/shThemeDefault.css" rel="stylesheet" type="text/css" media="all">
+	<link href="//cache.getlazarus.org/styles/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all">
+	<link href="//cache.getlazarus.org/styles/tooltipster.css" rel="stylesheet" type="text/css" media="all">
+	<link href="//cache.getlazarus.org/styles/tooltipster-shadow.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/styles/linedtextarea.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/styles/home.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/styles/editor.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/styles/wrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/styles/dialog.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+<body><!-- audio autoplay><source src="//cache.codebot.org/nfl/nfl-theme.mp3" type="audio/mpeg"></audio -->
+<div id="box">
+<div id="clouds" class="static"></div>
+<div id="wrapper">
+	<div id="page">
+		<div id="breadcrumb">{Breadcrumb}</div>
+		<div id="download" class="tooltip" title="<center><strong>Lazarus is free open source software</strong><br>Why not give it a try today?</center>"></div>
+		<!-- this section wraps stuff around the curved header -->
+		<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		<!-- allow pages to be edited by users -->
+		{EditorTools}
+		<!-- confirmation dialogs -->
+		<div id="editConfirm" class="confirm, hidden">Save your personal edits of this page?
+			<div class="button one" onclick="return clickEditSave()">Save</div>
+			<div class="button two" onclick="return clickEditCancel()">Cancel</div>
+		</div>
+		<div id="originalConfirm" class="confirm, hidden">You are viewing the original copy of this page</div>
+		<div id="previewConfirm" class="confirm, hidden">You are viewing your personal edited copy of this page</div>
+		<div id="deleteConfirm" class="confirm, hidden">Delete your edits, are you sure?
+			<div class="button one" onclick="return clickDeleteYes()">Yes</div>
+			<div class="button two" onclick="return clickDeleteCancel()">Cancel</div>
+		</div>
+		<div id="applyConfirm" class="confirm, hidden">Apply your edits to the original page?
+			<div class="button one" onclick="return clickApplyYes()">Yes</div>
+			<div class="button two" onclick="return clickApplyCancel()">Cancel</div>
+		</div>
+		<!-- dynamic content -->
+		<div id="content">{Content}</div>
+		<div id="footer">
+			<div>
+				<div>Lazarus</div>
+				<ul>
+					<li><a class="footLink" href="/new">What's New</a></li>
+					<li><a class="footLink" href="/setup">Universal Setup</a></li>
+					<li><a class="footLink" href="/language">Language Features</a></li>
+					<li><a class="footLink" href="/development">Development Environment</a></li>
+				</ul>
+			</div>
+			<div>
+				<div>Community</div>
+				<ul>
+					<li><a class="footLink" href="//www.getlazarus.org/forums">Forums</a></li>
+					<li><a class="footLink" href="/community/showcase">Showcase</a></li>
+					<li><a class="footLink" href="/community/projects">Projects</a></li>
+					<li><a class="footLink" href="//www.getlazarus.org/forums/viewforum.php?f=13">Jobs</a></li>
+				</ul>
+			</div>
+			<div>
+				<div>Services</div>
+				<ul>
+					<li><a class="footLink" href="/about">About Us</a></li>
+					<li><a class="footLink" href="/help">Help Requests</a></li>
+					<li><a class="footLink" href="/consultation">Consultation</a></li>
+					<li><a class="footLink" href="/legal">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cache.getlazarus.org/syntax/scripts/shCore.js"></script>
+<script src="//cache.getlazarus.org/syntax/scripts/shBrushDelphi.js"></script>
+<script src="//cache.getlazarus.org/syntax/scripts/shBrushCSharp.js"></script>
+<script src="//cache.getlazarus.org/syntax/scripts/shBrushJScript.js"></script>
+<script src="//cache.getlazarus.org/scripts/jquery.fancybox.min.js"></script>
+<script  src="//cache.getlazarus.org/scripts/jquery.tooltipster.min.js"></script>
+<script src="/scripts/linedtextarea.js"></script>
+<script src="/scripts/home.js"></script>
+<script src="/scripts/editor.js"></script>
+<script src="/scripts/dialog.js"></script>
+</body>
+</html>
