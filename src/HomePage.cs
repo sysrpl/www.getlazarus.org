@@ -45,7 +45,11 @@ public class HomePage : PageHandler
     {
         FileWriteText("title.html", Title);
         if (FileExists(EditedTitleName))
+        {
+            var f = $"history.title.{DateTime.Now:yyyyMMddHHmmss)}.html";
+            FileWriteText(f, FileReadText(EditedTitleName));
             FileDelete(EditedTitleName);
+        }
     }
 
     [Action("apply-content")]
@@ -53,15 +57,18 @@ public class HomePage : PageHandler
     {
         FileWriteText("home.html", Content);
         if (FileExists(EditedContentName))
+        {
+            var f = $"history.home.{DateTime.Now:yyyyMMddHHmmss)}.html";
+            FileWriteText(f, FileReadText(EditedContentName));
             FileDelete(EditedContentName);
+        }
     }
 
     [Action("apply-edits")]
     public void ActionApplyEdits()
     {
-        FileWriteText("title.html", Title);
-        FileWriteText("home.html", Content);
-        ActionDeleteEdits();
+        ActionApplyTitle();
+        ActionApplyContent();
     }
 
     #endregion
@@ -159,7 +166,7 @@ public class HomePage : PageHandler
         get
         {
             var tools = IsLocal ? "/Templates/editor-tools-admin.html" : "/Templates/editor-tools.html";
-            return FileReadText(tools);
+            return IncludeRead(tools);
         }
     }
 }
